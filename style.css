@@ -1,0 +1,11 @@
+/* 
+Theme Name:    childtheme
+Template:    hello-elementor
+Version:      1.0.1
+Description:  Hello Elementor Child Theme
+Author:      Emil Toft Petersen
+*/
+
+h1 {
+  color: red;
+}
