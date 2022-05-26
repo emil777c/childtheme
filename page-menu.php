@@ -45,6 +45,8 @@ button:hover {
 	color: black;
 	background-color: #FEFCF3;
 }
+
+
 </style>
 
 
@@ -61,6 +63,7 @@ button:hover {
     <div class="section_wrapper">
         <p>Se vores udvalg</p>
     </div>
+
 
 </section>
     <template>
