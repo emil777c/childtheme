@@ -13,7 +13,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 while ( have_posts() ) :
 	the_post();
 	get_header();
+	
 	?>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+	</head>
 
 <style> 
 	@media (min-width: 600px) {
@@ -31,6 +38,7 @@ while ( have_posts() ) :
 
 article {
 	padding: 20px;
+	text-align: center;
 
 }
 
@@ -46,9 +54,35 @@ button:hover {
 	background-color: #FEFCF3;
 }
 
+<<<<<<< HEAD
+=======
+#filtrering {
+	text-align: center;
+	font-family: 'Arima Madurai', cursive;
+}
+
+
+.entry-title {
+	text-align: center;
+	font-family: 'Arima Madurai', cursive;
+}
+
+h3, p {
+	font-family: 'Arima Madurai', cursive;
+}
+
+.data-menu {
+	background-image: url(drikkevarer.png);
+}
+
+.site-footer {
+display: none;
+}
+>>>>>>> 88de8470208f76911ba77f2a6473d08e772c218a
 
 </style>
 
+<header>
 
 <main id="content" <?php post_class( 'site-main' ); ?> role="main">
 	<?php if ( apply_filters( 'hello_elementor_page_title', true ) ) : ?>
@@ -61,10 +95,14 @@ button:hover {
 	<main id="mainn" class="site-main" role="main">
 <section class="first_section">
     <div class="section_wrapper">
-        <p>Se vores udvalg</p>
     </div>
 
+<<<<<<< HEAD
 <!-- Section til artikel i loopview -->
+=======
+	
+
+>>>>>>> 88de8470208f76911ba77f2a6473d08e772c218a
 </section>
     <template>
         <article class="first_article">
@@ -81,8 +119,13 @@ button:hover {
             <div class="button_wrapper">
             <nav id="filtrering"></nav>
             </div>
+			<hr>
             <section id="container">
             </section>
+
+	<section id="footer">
+
+	</section>
             
 			 </main><!-- #main --> 
 	
@@ -105,8 +148,8 @@ button:hover {
         console.log(menuer);
        visMenuer();
        opretKnapper();
-       opretTitel();
         }
+		
 
 		function opretKnapper() {
             categories.forEach(cat => {
@@ -146,9 +189,8 @@ button:hover {
                 klon.querySelector(".titel").textContent = menu.title.rendered;
                 klon.querySelector(".beskrivelse").textContent = menu.beskrivelse;
                 klon.querySelector(".allergener").textContent = menu.allergener;
-				klon.querySelector(".pris").textContent =
-              "Pris: " + menu.pris + " ,-";
-                klon.querySelector("article").addEventListener("click", () => {location.href = menu.link; })
+				klon.querySelector(".pris").textContent = menu.pris + " ,-";
+                
 
       // Tilføjer variablen klon som child af variablen container
       container.appendChild(klon);
