@@ -64,7 +64,7 @@ button:hover {
         <p>Se vores udvalg</p>
     </div>
 
-
+<!-- Section til artikel i loopview -->
 </section>
     <template>
         <article class="first_article">
@@ -77,7 +77,7 @@ button:hover {
       </template>
 
 	<div id="primary" class="content-area">
-
+<!-- Div container til filtreringsknapper i menuen -->
             <div class="button_wrapper">
             <nav id="filtrering"></nav>
             </div>
@@ -87,6 +87,8 @@ button:hover {
 			 </main><!-- #main --> 
 	
 	<script>
+
+        //Variabler der bruges i funktioner//
         let menuer;
         let categories;
         let filterMenu = "alle";
@@ -94,7 +96,7 @@ button:hover {
         const catUrl = "https://emiltoft.dk/kea/10_eksamen/wordpress/wp-json/wp/v2/categories?per_page=100";
 
 
-
+        //Funktion som dynamisk
         async function hentData() {
         const respons = await fetch(url);
         const catrespons = await fetch(catUrl);
