@@ -13,7 +13,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 while ( have_posts() ) :
 	the_post();
 	get_header();
+	
 	?>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+	</head>
 
 <style> 
 	@media (min-width: 600px) {
@@ -31,6 +38,7 @@ while ( have_posts() ) :
 
 article {
 	padding: 20px;
+	text-align: center;
 
 }
 
@@ -45,8 +53,34 @@ button:hover {
 	color: black;
 	background-color: #FEFCF3;
 }
+
+#filtrering {
+	text-align: center;
+	font-family: 'Arima Madurai', cursive;
+}
+
+
+.entry-title {
+	text-align: center;
+	font-family: 'Arima Madurai', cursive;
+}
+
+h3, p {
+	font-family: 'Arima Madurai', cursive;
+}
+
+.data-menu {
+	background-image: url(drikkevarer.png);
+}
+
+.site-footer {
+display: none;
+}
+
 </style>
 
+<header>
+     
 
 <main id="content" <?php post_class( 'site-main' ); ?> role="main">
 	<?php if ( apply_filters( 'hello_elementor_page_title', true ) ) : ?>
@@ -59,8 +93,9 @@ button:hover {
 	<main id="mainn" class="site-main" role="main">
 <section class="first_section">
     <div class="section_wrapper">
-        <p>Se vores udvalg</p>
     </div>
+
+	
 
 </section>
     <template>
@@ -78,8 +113,13 @@ button:hover {
             <div class="button_wrapper">
             <nav id="filtrering"></nav>
             </div>
+			<hr>
             <section id="container">
             </section>
+
+	<section id="footer">
+
+	</section>
             
 			 </main><!-- #main --> 
 	
@@ -100,7 +140,6 @@ button:hover {
         console.log(menuer);
        visMenuer();
        opretKnapper();
-       opretTitel();
         }
 
 		function opretKnapper() {
@@ -141,9 +180,8 @@ button:hover {
                 klon.querySelector(".titel").textContent = menu.title.rendered;
                 klon.querySelector(".beskrivelse").textContent = menu.beskrivelse;
                 klon.querySelector(".allergener").textContent = menu.allergener;
-				klon.querySelector(".pris").textContent =
-              "Pris: " + menu.pris + " ,-";
-                klon.querySelector("article").addEventListener("click", () => {location.href = menu.link; })
+				klon.querySelector(".pris").textContent = menu.pris + " ,-";
+                
 
       // Tilføjer variablen klon som child af variablen container
       container.appendChild(klon);
