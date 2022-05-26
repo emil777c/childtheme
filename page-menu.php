@@ -80,7 +80,6 @@ display: none;
 </style>
 
 <header>
-     
 
 <main id="content" <?php post_class( 'site-main' ); ?> role="main">
 	<?php if ( apply_filters( 'hello_elementor_page_title', true ) ) : ?>
@@ -141,6 +140,7 @@ display: none;
        visMenuer();
        opretKnapper();
         }
+		
 
 		function opretKnapper() {
             categories.forEach(cat => {
