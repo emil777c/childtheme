@@ -113,6 +113,7 @@ display: none;
     <div class="section_wrapper">
     </div>
 
+<!-- Section til artikel i loopview -->
 	
 
 </section>
@@ -127,7 +128,7 @@ display: none;
       </template>
 
 	<div id="primary" class="content-area">
-
+<!-- Div container til filtreringsknapper i menuen -->
             <div class="button_wrapper">
             <nav id="filtrering"></nav>
             </div>
@@ -142,6 +143,8 @@ display: none;
 			 </main><!-- #main --> 
 	
 	<script>
+
+        //Variabler der bruges i funktioner//
         let menuer;
         let categories;
         let filterMenu = "alle";
@@ -149,7 +152,7 @@ display: none;
         const catUrl = "https://emiltoft.dk/kea/10_eksamen/wordpress/wp-json/wp/v2/categories?per_page=100";
 
 
-
+        //Funktion som dynamisk henter indhold fra Wordpress REST API // 
         async function hentData() {
         const respons = await fetch(url);
         const catrespons = await fetch(catUrl);
@@ -160,7 +163,7 @@ display: none;
        opretKnapper();
         }
 		
-
+        //Opsættelse af filtreringsknapper. Henviser bl.a. til en variabel//
 		function opretKnapper() {
             categories.forEach(cat => {
                 document.querySelector("#filtrering").innerHTML += `<button class="filter" data-menu="${cat.id}">${cat.name}</button>`
@@ -168,13 +171,13 @@ display: none;
             addEventListenersToButtons();
         }
 
-
+        //Click funktion til knapper, som henviser til funktionen "filterering"//
         function addEventListenersToButtons() {
             document.querySelectorAll("#filtrering button").forEach(elm =>{
                 elm.addEventListener("click", filtrering);
             })
         };
-
+      //Funktion som filtrere efter datasættet når man har klikket på en knap. Derefter kalder den visMenuer//
         function filtrering(){
             filterMenu = this.dataset.menu;
             console.log(filterMenu);
@@ -182,19 +185,15 @@ display: none;
             visMenuer();
         }
 
-
+        //Funktion vis menuer der sørger for, at hvert element får titel, billede, beskrivelse osv//
 		function visMenuer() {
          const container = document.querySelector("#container");
         const template = document.querySelector("template");
         container.innerHTML = "";
-
-
         menuer.forEach((menu) => {
+            //ParseINT der gør vi får kategorierne til at være et tal fremfor tekst//
             if ( filterMenu == "alle" || menu.categories.includes(parseInt(filterMenu))) {
-        // Tjek hvilket verdensmål projektet har, sammenlign med aktuelt filter eller hvis filter har værdien "alle" så vis alle
                 let klon = template.cloneNode(true).content;
-
-                // Tilføjer elementer fra Jason til template
                 klon.querySelector(".billede").src = menu.billede.guid;
                 klon.querySelector(".titel").textContent = menu.title.rendered;
                 klon.querySelector(".beskrivelse").textContent = menu.beskrivelse;
