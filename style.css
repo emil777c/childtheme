@@ -9,3 +9,8 @@ Author:      Emil Toft Petersen
 h1 {
   color: red;
 }
+
+a:hover {
+  border: 2px black solid;
+  color: black;
+}

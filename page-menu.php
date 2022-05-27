@@ -54,6 +54,11 @@ button:hover {
 	background-color: #FEFCF3;
 }
 
+li:hover {
+	border: 2px #487BB2 solid;
+	color: black;
+}
+
 #filtrering {
 	text-align: center;
 	font-family: 'Arima Madurai', cursive;
@@ -77,9 +82,22 @@ h3, p {
 display: none;
 }
 
+.filter {
+	background-color: #FEFCF3;
+}
+
+#content {
+	background-image: url(baggrund2.jpg);
+	background-size: cover;
+}
+
+
+
 </style>
 
+
 <header>
+
 
 <main id="content" <?php post_class( 'site-main' ); ?> role="main">
 	<?php if ( apply_filters( 'hello_elementor_page_title', true ) ) : ?>
@@ -90,6 +108,7 @@ display: none;
 	<div class="page-content">
 		<?php the_content(); ?>
 	<main id="mainn" class="site-main" role="main">
+
 <section class="first_section">
     <div class="section_wrapper">
     </div>
