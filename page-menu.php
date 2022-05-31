@@ -86,10 +86,18 @@ display: none;
 	background-color: #FEFCF3;
 }
 
-#content {
-	background-image: url(baggrund2.jpg);
-	background-size: cover;
+@font-face {
+  font-family: "silom";
+  src: url(http://emiltoft.dk/kea/10_eksamen/wordpress/wp-content/themes/childtheme/fonts/silom-webfont.woff);
+  font-weight: normal;
 }
+
+h2 {
+    font-family: "silom";
+}
+
+
+
 
 
 
@@ -101,6 +109,7 @@ display: none;
 
 <main id="content" <?php post_class( 'site-main' ); ?> role="main">
 	<?php if ( apply_filters( 'hello_elementor_page_title', true ) ) : ?>
+		
 		<header class="page-header">
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		</header>
@@ -109,14 +118,11 @@ display: none;
 		<?php the_content(); ?>
 	<main id="mainn" class="site-main" role="main">
 
-<section class="first_section">
-    <div class="section_wrapper">
-    </div>
 
 <!-- Section til artikel i loopview -->
 	
 
-</section>
+
     <template>
         <article class="first_article">
           <img class="billede" src="" alt="" />

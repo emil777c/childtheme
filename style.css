@@ -10,7 +10,17 @@ h1 {
   color: red;
 }
 
-a:hover {
+li:hover {
   border: 2px black solid;
   color: black;
+}
+
+@font-face {
+  font-family: "silom";
+  src: url(http://emiltoft.dk/kea/10_eksamen/wordpress/wp-content/themes/childtheme/fonts/silom-webfont.woff);
+  font-weight: normal;
+}
+
+h2 {
+  font-family: "silom";
 }
