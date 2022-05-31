@@ -55,7 +55,7 @@ button:hover {
 }
 
 li:hover {
-	border: 2px #487BB2 solid;
+	border: 1px black solid;
 	color: black;
 }
 
@@ -92,37 +92,6 @@ display: none;
   font-weight: normal;
 }
 
-#content > header > h1 {
-    font-family: "silom";
-}
-#filtrering {
-    font-family: "silom";
-
-}
-
-#container > article:nth-child(1) > h3 {
-        font-family: "silom";
-}
-#container > article:nth-child(2) > h3 {
-        font-family: "silom";
-}
-
-#container > article:nth-child(3) > h3 {
-        font-family: "silom";
-}
-#container > article:nth-child(4) > h3 {
-        font-family: "silom";
-}
-#container > article:nth-child(5) > h3 {
-        font-family: "silom";
-}
-#container > article:nth-child(6) > h3 {
-        font-family: "silom";
-}
-
-#container > article:nth-child(7) > h3 {
-        font-family: "silom";
-}
 
 
 

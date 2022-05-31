@@ -11,7 +11,7 @@ h1 {
 }
 
 li:hover {
-  border: 2px black solid;
+  border: 1px black solid;
   color: black;
 }
 
