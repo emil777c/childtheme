@@ -124,7 +124,28 @@ display: none;
         font-family: "silom";
 }
 
+#content > header > h1 {
+    background-color: #C6803A;
+    color: white;
+    margin-left: 400px;
+    margin-right:400px;
+    margin-top: -33px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
+
+@media (max-width: 767px) {
+    #content > header > h1 {
+    background-color: #C6803A;
+    color: white;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: -33px;
+    padding-bottom: 10px
+
+    }
+}
 
 
 
