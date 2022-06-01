@@ -71,7 +71,7 @@ li:hover {
 }
 
 h3, p {
-	font-family: 'Arima Madurai', cursive;
+	font-family: "Silom";
 }
 
 .data-menu {
