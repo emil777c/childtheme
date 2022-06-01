@@ -147,6 +147,28 @@ display: none;
     }
 }
 
+#filtrering > button:nth-child(1):focus {
+    background-color: #FEFCF3;
+    border: 0.5px solid black;
+    color: black; 
+}
+#filtrering > button:nth-child(2):focus {
+    background-color: #FEFCF3;
+    border: 0.5px solid black;
+    color: black; 
+}
+#filtrering > button:nth-child(3):focus {
+    background-color: #FEFCF3;
+    border: 0.5px solid black;
+    color: black; 
+}
+#filtrering > button:nth-child(4):focus {
+    background-color: #FEFCF3;
+    border: 0.5px solid black;
+    color: black; 
+}
+
+
 
 
 
