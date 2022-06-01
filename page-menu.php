@@ -55,7 +55,7 @@ button:hover {
 }
 
 li:hover {
-	border: 2px #487BB2 solid;
+	border: 1px black solid;
 	color: black;
 }
 
@@ -88,14 +88,85 @@ display: none;
 
 @font-face {
   font-family: "silom";
-  src: url(http://emiltoft.dk/kea/10_eksamen/wordpress/wp-content/themes/childtheme/fonts/silom-webfont.woff);
+  src: url(http://emiltoft.dk/kea/10_eksamen/wordpress/wp-content/themes/childtheme/fonts/silom.tff;);
   font-weight: normal;
 }
 
-h2 {
+#content > header > h1 {
     font-family: "silom";
 }
+#filtrering {
+    font-family: "silom";
 
+}
+
+#container > article:nth-child(1) > h3 {
+        font-family: "silom";
+}
+#container > article:nth-child(2) > h3 {
+        font-family: "silom";
+}
+
+#container > article:nth-child(3) > h3 {
+        font-family: "silom";
+}
+#container > article:nth-child(4) > h3 {
+        font-family: "silom";
+}
+#container > article:nth-child(5) > h3 {
+        font-family: "silom";
+}
+#container > article:nth-child(6) > h3 {
+        font-family: "silom";
+}
+
+#container > article:nth-child(7) > h3 {
+        font-family: "silom";
+}
+
+#content > header > h1 {
+    background-color: #C6803A;
+    color: white;
+    margin-left: 400px;
+    margin-right:400px;
+    margin-top: -33px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+@media (max-width: 767px) {
+    #content > header > h1 {
+    background-color: #C6803A;
+    color: white;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: -33px;
+    padding-bottom: 10px
+
+    }
+}
+
+#filtrering > button:nth-child(1):focus {
+    background-color: #FEFCF3;
+    border: 0.5px solid black;
+    color: black; 
+}
+#filtrering > button:nth-child(2):focus {
+    background-color: #FEFCF3;
+    border: 0.5px solid black;
+    color: black; 
+}
+#filtrering > button:nth-child(3):focus {
+    background-color: #FEFCF3;
+    border: 0.5px solid black;
+    color: black; 
+}
+#filtrering > button:nth-child(4):focus {
+    background-color: #FEFCF3;
+    border: 0.5px solid black;
+    color: black; 
+}
 
 
 
