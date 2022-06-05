@@ -68,10 +68,15 @@ li:hover {
 .entry-title {
 	text-align: center;
 	font-family: 'Arima Madurai', cursive;
+    font-size: 26px;
 }
 
-h3, p {
+h3 {
 	font-family: "Silom";
+}
+
+p {
+    font-family: "tamilsangam";
 }
 
 .data-menu {
@@ -84,6 +89,7 @@ display: none;
 
 .filter {
 	background-color: #FEFCF3;
+    text-transform: uppercase;
 }
 
 @font-face {
@@ -92,9 +98,17 @@ display: none;
   font-weight: normal;
 }
 
+@font-face {
+  font-family: "tamilsangam";
+  src: url(http://emiltoft.dk/kea/10_eksamen/wordpress/wp-content/themes/childtheme/fonts/TamilSangamMN.tff;);
+  font-weight: normal;
+}
+
 #content > header > h1 {
     font-family: "silom";
+    text-transform: uppercase;
 }
+
 #filtrering {
     font-family: "silom";
 
@@ -168,6 +182,12 @@ display: none;
     color: black; 
 }
 
+.underoverskrift {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 
 
 
@@ -207,6 +227,7 @@ display: none;
 	<div id="primary" class="content-area">
 <!-- Div container til filtreringsknapper i menuen -->
             <div class="button_wrapper">
+                <p class="underoverskrift">Vores morgenmad, frokost og bagværk er lavet på kvalitet og gode råvarer. Vi stræber efter at handle så økologisk og lokalt som muligt, og samarbejder blandt andet med små og mindre producenter. </p>
             <nav id="filtrering"></nav>
             </div>
 			<hr>
